@@ -22,6 +22,8 @@ p = zeros(size(X, 1), 1);
 %
 
 
+
+
 % Add the bias node ones to X
 X = [ones(m, 1) X];
 
@@ -38,7 +40,7 @@ z_three = a_two * Theta2';
 
 h_theta = sigmoid(z_three);
 
-
+% and then do
 
 [max_val, p] = max(h_theta, [], 2);
 
